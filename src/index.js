@@ -4,7 +4,9 @@ import './index.scss';
 import partsShit from './getParts';
 
 const initializeFuncs = () => {
-  partsShit.partsGetter();
+  partsShit.headGetter();
+  partsShit.torsosGetter();
+  partsShit.legsGetter();
 };
 
 initializeFuncs();

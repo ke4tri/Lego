@@ -1,36 +1,70 @@
-import 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
 
 import wayne from './data/partsData';
 
-const createPartsCards = (parts) => {
+const createHead = (parts) => {
   let newString = '';
   parts.forEach((part) => {
     newString += `
-      <div class="card u-clearfix">
-        <div class="card-body">
-          <span class="card-number card-circle subtle">${part['add-on-price'].toFixed(0)}</span>
-          <span class="card-author subtle"></span>
-          <h2 class="card-title">${part.name}</h2>
-          <span class="card-description subtle">${part.specialSkill}</span>
-          <div class="card-read"><span class="subtle">Color</span>${part.color}</div>
-        </div>
-        <img src="${part.gif}" alt="" class="card-media" />
+      <div>
+      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
       </div>`;
   });
-  $('#parts').html(newString);
+  $('#heads').html(newString);
 };
 
-const partsGetter = () => {
-  wayne.getParts()
+const createtorsos = (parts) => {
+  let newString = '';
+  parts.forEach((part) => {
+    newString += `
+      <div>
+      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
+      </div>`;
+  });
+  $('#torsos').html(newString);
+};
+
+const createLegs = (parts) => {
+  let newString = '';
+  parts.forEach((part) => {
+    newString += `
+      <div>
+      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
+      </div>`;
+  });
+  $('#legs').html(newString);
+};
+
+const headGetter = () => {
+  wayne.getHeadParts()
     .then((data) => {
-      createPartsCards(data.data);
+      createHead(data.data);
     })
     .catch((error) => {
       console.log({ error });
     });
 };
 
+const torsosGetter = () => {
+  wayne.getTorsosParts()
+    .then((data) => {
+      createtorsos(data.data);
+    })
+    .catch((error) => {
+      console.log({ error });
+    });
+};
 
-export default { partsGetter };
+const legsGetter = () => {
+  wayne.getLegsParts()
+    .then((data) => {
+      createLegs(data.data);
+    })
+    .catch((error) => {
+      console.log({ error });
+    });
+};
+
+export default { headGetter, torsosGetter, legsGetter };
