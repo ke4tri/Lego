@@ -10,7 +10,7 @@ const createHead = (parts) => {
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
       <div>
-      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Head" height="200" width="200">
       </div>`;
   newString2 = `${randomItem.name}`;
   $('#heads').html(newString);
@@ -23,7 +23,7 @@ const createtorsos = (parts) => {
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
       <div>
-      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Torso" height="200" width="200">
       </div>`;
   newString2 = `${randomItem.name}`;
   $('#torsos').html(newString);
@@ -36,7 +36,7 @@ const createLegs = (parts) => {
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
       <div>
-      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Legs" height="200" width="200">
       </div>`;
   newString2 = `${randomItem.name}`;
   $('#legs').html(newString);
@@ -72,5 +72,6 @@ const legsGetter = () => {
       console.log({ error });
     });
 };
+
 
 export default { headGetter, torsosGetter, legsGetter };
