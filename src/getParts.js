@@ -6,35 +6,41 @@ import wayne from './data/partsData';
 
 const createHead = (parts) => {
   let newString = '';
-  parts.forEach((part) => {
-    newString += `
+  let newString2 = '';
+  const randomItem = parts[Math.floor(Math.random() * parts.length)];
+  newString += `
       <div>
-      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
       </div>`;
-  });
+  newString2 = `${randomItem.name}`;
   $('#heads').html(newString);
+  $('#name').append(newString2);
 };
 
 const createtorsos = (parts) => {
   let newString = '';
-  parts.forEach((part) => {
-    newString += `
+  let newString2 = '';
+  const randomItem = parts[Math.floor(Math.random() * parts.length)];
+  newString += `
       <div>
-      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
       </div>`;
-  });
+  newString2 = `${randomItem.name}`;
   $('#torsos').html(newString);
+  $('#name').append(newString2);
 };
 
 const createLegs = (parts) => {
   let newString = '';
-  parts.forEach((part) => {
-    newString += `
+  let newString2 = '';
+  const randomItem = parts[Math.floor(Math.random() * parts.length)];
+  newString += `
       <div>
-      <img src="${part.imageUrl}" alt="Smiley face" height="200" width="200">
+      <img src="${randomItem.imageUrl}" alt="Leg" height="200" width="200">
       </div>`;
-  });
+  newString2 = `${randomItem.name}`;
   $('#legs').html(newString);
+  $('#name').append(newString2);
 };
 
 const headGetter = () => {
