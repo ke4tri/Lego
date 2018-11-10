@@ -1,7 +1,25 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: palevioletred;
+  background-color: rgb(253, 228, 0);
+  background-image: url(http://www.motherslovetifton.com/wp-content/uploads/2015/07/yellow-lego-V2-1600x800LOW.png);
+  height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.characterText {
+  background-color: rgba(184, 135, 11, 0.514);
+  border: 3px dotted darkgoldenrod;
+}
+
+.legoLogo {
+  transform: rotate(-20deg);
+  margin-right: 850px;
+  margin-bottom: -450px;
+  margin-top: 150px;
 }
 
 %center-shared {
@@ -10,19 +28,74 @@ body {
   align-items: center;
 }
 
+.colorB {
+  background-color: rgba(243, 229, 30, 0.596);
+}
+
+colorC {
+  background-color: white;
+}
+
 #wrap {
   @extend %center-shared;
+  margin-top: 30px;
 }
+
 
 #randoBtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 8px;
+}
+
+#random {
+  margin-right: 10px;
+}
+#save {
+
 }
 
 #savedWrap {
   @extend %center-shared;
-  height: 50px;
-  width: auto;
+  margin-right:25px;
+  margin-left: 1125px;
+  margin-top: -500px;
+  border: 3px rgb(150, 101, 10) double;
 }
 
+.name {
+  font-size: 40px;
+}
+
+.headSmall > img {
+  width: 100px;
+  height: 100px;
+}
+
+.nameSmall >  {
+  width: 100px;
+  height: 100px;
+}
+
+.headSmall > img {
+  width: 100px;
+  height: 100px;
+
+}
+
+.torsoSmall > img {
+  width: 100px;
+  height: 100px;
+}
+
+.legsSmall > img {
+  width: 100px;
+  height: 100px;
+}
+
+
+// * {
+//   max-width:100% !important;
+//   height:auto !important;
+// }

@@ -9,10 +9,9 @@ const createHead = (parts) => {
   let newString2 = '';
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
-      <div>
-      <img src="${randomItem.imageUrl}" alt="Head" height="200" width="200">
-      </div>`;
-  newString2 = `${randomItem.name}`;
+      <img src="${randomItem.imageUrl}" height="175" width="175" >
+      `;
+  newString2 = `${randomItem.name}`.toUpperCase();
   $('#heads').html(newString);
   $('#name').append(newString2);
 };
@@ -22,10 +21,9 @@ const createtorsos = (parts) => {
   let newString2 = '';
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
-      <div>
-      <img src="${randomItem.imageUrl}" alt="Torso" height="200" width="200">
-      </div>`;
-  newString2 = `${randomItem.name}`;
+      <img src="${randomItem.imageUrl}" alt="Torso" height="175" width="175" >
+      `;
+  newString2 = `${randomItem.name}`.toUpperCase();
   $('#torsos').html(newString);
   $('#name').append(newString2);
 };
@@ -35,10 +33,9 @@ const createLegs = (parts) => {
   let newString2 = '';
   const randomItem = parts[Math.floor(Math.random() * parts.length)];
   newString += `
-      <div>
-      <img src="${randomItem.imageUrl}" alt="Legs" height="200" width="200">
-      </div>`;
-  newString2 = `${randomItem.name}`;
+      <img src="${randomItem.imageUrl}" alt="Legs" class="saveBuild" height="175" width="175" >
+      `;
+  newString2 = `${randomItem.name}`.toUpperCase();
   $('#legs').html(newString);
   $('#name').append(newString2);
 };
