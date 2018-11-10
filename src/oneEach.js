@@ -20,11 +20,6 @@ $('#random').click(() => {
   bodyBuild();
 });
 
-// const saveTheFig = () => {
-//   const savedName = document.getElementById('name');
-//   $('#savedName').html(savedName.innerHTML);
-// };
-
 const saveTheFig = () => {
   const savedName = document.getElementById('name');
   const savedHead = document.getElementById('heads');

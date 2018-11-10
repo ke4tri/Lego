@@ -2,6 +2,13 @@
 
 body {
   background-color: palevioletred;
+
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 %center-shared {
@@ -20,9 +27,21 @@ body {
   justify-content: center;
 }
 
-#savedWrap {
-  @extend %center-shared;
-  height: 50px;
-  width: auto;
+%saved-sizes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid black;
 }
+
+#savedWrap {
+  
+  margin-left: 100px;
+  margin-top: -550px;
+  @extend %saved-sizes
+};
+
 
