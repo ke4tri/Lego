@@ -26,10 +26,11 @@ const saveTheFig = () => {
   const savedTorso = document.getElementById('torsos');
   const savedLegs = document.getElementById('legs');
 
-  $('#savedName').html(savedName.innerHTML);
-  $('#savedHead').html(savedHead.innerHTML);
-  $('#savedTorso').html(savedTorso.innerHTML);
-  $('#savedLegs').html(savedLegs.innerHTML);
+  $('#savedName').append(savedName.innerHTML);
+  $('#savedHead').append(savedHead.innerHTML);
+  $('#savedTorso').append(savedTorso.innerHTML);
+  $('#savedLegs').append(savedLegs.innerHTML);
+  console.log('check');
 };
 
 $('#save').click(() => {
