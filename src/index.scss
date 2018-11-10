@@ -15,13 +15,6 @@ body {
   border: 3px dotted darkgoldenrod;
 }
 
-.legoLogo {
-  transform: rotate(-20deg);
-  margin-right: 850px;
-  margin-bottom: -450px;
-  margin-top: 150px;
-}
-
 %center-shared {
   display: flex;
   flex-direction: column;
@@ -36,9 +29,16 @@ colorC {
   background-color: white;
 }
 
+.legoLogo {
+  transform: rotate(-20deg);
+  margin-right: 1000px;
+  margin-bottom: -450px;
+  margin-top: 140px;
+}
+
 #wrap {
   @extend %center-shared;
-  margin-top: 30px;
+  margin-top:10px;
 }
 
 
