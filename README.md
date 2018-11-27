@@ -16,13 +16,23 @@ To run this app you will need a firebase account and a new project.
 * In the db folder rename `apiKeys.json.example` to `apiKeys.json`
 * Add in the config object from your firebase project
 2.  Serve up the app
-* At the root of the project: `npm install`
-* `npm start`
+* At the root of the project: 
+
+```javascript 
+npm install
+```
+
+* THEN
+
+```javascript
+npm start
+```
 3. If data not in Firebase
-* Navigate to two seperate terminals and run one
-'''
+* Open new terminal and run :
+
+```javascript
 npm run parts
-'''
+```
 
 ### Contributors
-* Wayne Collider
+* Wayne Collier
