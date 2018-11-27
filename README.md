@@ -3,6 +3,8 @@
 ### Description
 This project is an exploration of SASS styling by creating a figure biulder from lego parts. Once loaded the user is able to press the random button and a random figure will be generated. 
 
+![LegoView](https://github.com/ke4tri/Lego/blob/master/lego.JPG?raw=true)
+
 ### Technologies Used
 * SASS
 * Webpack
